@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+
+}
+
+/*navbar*/
+
+
+.nav-container {
+    position: sticky;
+    z-index: 3;
+    top: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 12vh;
+    background-color: #1b1b1b;
+}
+
+.navbar-logo {
+    justify-self: start;
+    margin-left: 20px;
+    color: #fff;
+    margin-top: 4vh;
+    cursor: pointer;
+}
+
+/*Encabezado*/
+
+.banner {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("https://attachment.outlook.live.net/owa/MSA%3Atomasgonzalezdesarrolloweb%40hotmail.com/service.svc/s/GetAttachmentThumbnail?id=AQMkADAwATY0MDABLTFjNGItMDAAMWQtMDACLTAwCgBGAAADE03NuKS3XkCBBNAi%2FHashAcAafACAwXQV0G%2Bhmucu8smJQAAAgEMAAAAafACAwXQV0G%2Bhmucu8smJQAAAhUlAAAAARIAEADmA1ClM1xNTr8wQnqNFL0%2F&thumbnailType=2&isc=1&token=eyJhbGciOiJSUzI1NiIsImtpZCI6IkQ4OThGN0RDMjk2ODQ1MDk1RUUwREZGQ0MzODBBOTM5NjUwNDNFNjQiLCJ0eXAiOiJKV1QiLCJ4NXQiOiIySmozM0Nsb1JRbGU0Tl84dzRDcE9XVUVQbVEifQ.eyJvcmlnaW4iOiJodHRwczovL291dGxvb2subGl2ZS5jb20iLCJ1YyI6ImNjODllMjdjYWU3YTQ1MWQ4Mzg0ODhmOTQwMjhlOGY0IiwidmVyIjoiRXhjaGFuZ2UuQ2FsbGJhY2suVjEiLCJhcHBjdHhzZW5kZXIiOiJPd2FEb3dubG9hZEA4NGRmOWU3Zi1lOWY2LTQwYWYtYjQzNS1hYWFhYWFhYWFhYWEiLCJpc3NyaW5nIjoiV1ciLCJhcHBjdHgiOiJ7XCJtc2V4Y2hwcm90XCI6XCJvd2FcIixcInB1aWRcIjpcIjE3NTkyMTkwNzkxMTg4NzdcIixcInNjb3BlXCI6XCJPd2FEb3dubG9hZFwiLFwib2lkXCI6XCIwMDA2NDAwMC0xYzRiLTAwMWQtMDAwMC0wMDAwMDAwMDAwMDBcIixcInByaW1hcnlzaWRcIjpcIlMtMS0yODI3LTQwOTYwMC00NzQ2NzcyNzdcIn0iLCJuYmYiOjE2Nzg5MzI0NTEsImV4cCI6MTY3ODkzMzA1MSwiaXNzIjoiMDAwMDAwMDItMDAwMC0wZmYxLWNlMDAtMDAwMDAwMDAwMDAwQDg0ZGY5ZTdmLWU5ZjYtNDBhZi1iNDM1LWFhYWFhYWFhYWFhYSIsImF1ZCI6IjAwMDAwMDAyLTAwMDAtMGZmMS1jZTAwLTAwMDAwMDAwMDAwMC9hdHRhY2htZW50Lm91dGxvb2subGl2ZS5uZXRAODRkZjllN2YtZTlmNi00MGFmLWI0MzUtYWFhYWFhYWFhYWFhIiwiaGFwcCI6Im93YSJ9.kkc90aIXwXJxzoKgCXeyeBM3axm2QG76-zxmRaD_PofcWWRK9UCVh0mxaCawWm2cRw2tKP_FLllzVLZ2afKAMi1dMmXIqVkWAlDuJS6J1I8cNgNt3cTu5HFAUa6UedeNqzZfZdzz_24p8chofLWfD0Kh1vG_C2gOskwdw3CKwzTjl8it5hMkDhjdL-1WNWN7lIhrqp5hhh2jibARMTwGqk0ZK8bOzwdwH7UQsp-fimmf7g_Pnq9dh8Eil9Q8pRYIyj49K6X4MAQ6VBF5sPABS1_AcCHmgEdXiN4OYDrAUC6CNo3ZO4yzbe-Htq7wSC-8ud8dCACeATj32U7g5vKPaQ&X-OWA-CANARY=S2w4eLJRAUuvSwS9-Tm7IRBiweLDJdsY0FFTYJoGR20I9w11-cBbJoF067Bmshi3e9ttX8EeMgI.&owa=outlook.live.com&scriptVer=20230303006.11&animation=true");
+}
+
+.banner-container {
+    text-align: center;
+    padding: 15% 0;
+}
+
+.banner h1 {
+    margin: 0;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    font-size: 62px;
+    font-weight: bold;
+}
+
+.banner p {
+    font-size: 30px;
+    color: #fff;
+    opacity: 0.7;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/*Card Productos*/
+
+.contenido-tienda {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+}
+
+.card>img {
+    width: 90%;
+    height: 250px;
+}
+
+.precio {
+    color: grey;
+    font-size: 22px;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+}
+
+.card button:hover {
+    opacity: 0, 7;
+}
+
+/**/
+
+.modal-container {
+    width: 80%;
+    margin: 0 10%;
+    max-height: 88vh;
+    color: #fff;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 12vh;
+}
+
+.modal-container::-webkit-scrollbar {
+    display: none;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #0a0909;
+    color: #fff;
+    width: 100%;
+}
+
+.modal-header-tittle {
+    justify-self: start;
+}
+
+.modal-header-button {
+    cursor: pointer;
+}
+
+.modal-container>.modal-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 10px;
+}
+
+.modal-container>div>img {
+    height: 120px;
+    width: 120px;
+}
+
+.total-content {
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
