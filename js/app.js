@@ -1,7 +1,9 @@
-const contenidoTienda = document.getElementById("contenidoTienda")
+const contenidoTienda = document.getElementById("contenidoTienda");
 const verCarrito = document.getElementById("verCarrito");
-const modalContainer = document.getElementById("modal-container")
-let saludo = prompt("Hola, ingresa tu nombre y apellido por favor")
+const modalContainer = document.getElementById("modal-container");
+const cantidadCarrito = document.getElementById("cantidadCarrito");
+let saludo = prompt("Hola, ingresa tu nombre y apellido por favor");
+
 let carrito = [];
 
 productos.forEach((product) => {
@@ -22,12 +24,26 @@ productos.forEach((product) => {
     content.append(comprar);
 
     comprar.addEventListener("click", () => {
-        carrito.push({
-            id: product.id,
-            img: product.img,
-            nombre: product.nombre,
-            precio: product.precio,
-        })
+
+        const repetir = carrito.some((repetirProduct) => repetirProduct.id === product.id);
+
+        if (repetir === true) {
+            carrito.map((prod) => {
+                if (prod.id === product.id)
+                    prod.cantidad++;
+            });
+        } else {
+
+            carrito.push({
+                id: product.id,
+                img: product.img,
+                nombre: product.nombre,
+                precio: product.precio,
+                cantidad: product.cantidad,
+
+            });
+        }
         console.log(carrito);
-    })
+        carritoCounter();
+    });
 });
