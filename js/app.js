@@ -1,10 +1,13 @@
+//Funcionalidades basicas de la pagina y los productos visibles.
+
 const contenidoTienda = document.getElementById("contenidoTienda");
 const verCarrito = document.getElementById("verCarrito");
 const modalContainer = document.getElementById("modal-container");
 const cantidadCarrito = document.getElementById("cantidadCarrito");
 let saludo = prompt("Hola, ingresa tu nombre y apellido por favor");
+console.log("Esta comprando", saludo);
 
-let carrito = [];
+let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 productos.forEach((product) => {
     let content = document.createElement("div");
@@ -44,6 +47,8 @@ productos.forEach((product) => {
             });
         }
         console.log(carrito);
+        console.log(carrito.length);
         carritoCounter();
+        guardadoLocal();
     });
 });

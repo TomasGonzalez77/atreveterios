@@ -5,9 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Metas para posicionamiento CEO que me puede ser util mas adelante si quiero cargar la web a servidor o reciclarla para proyectos-->
+    <meta name="description"
+        content="Tienda ecomerce de padel, donde podras encontrar pelotas, paletas, protectores, grips y todo tipo de productos relacionados">
+    <meta name="keywords"
+        content="paleta, paletas, pelota, pelotas, grip, grips, cubregrip, cubregrips, protector, protectores, padel, sintetico, carbono, eva, foam, bullpadel, badoer, adidas">
+    <meta name="author"
+        content="Tomas Gonzalez | tomasgonzalezdesarrolloweb@hotmail.com | https://github.com/TomasGonzalez77">
+    <!--Hoja de estilos propia-->
     <link rel="stylesheet" href="./css/estilos.css">
-    <link rel="shortcut icon" href="./image/atrevete.PNG" type="image/x-icon">
-    <title> Tienda | Lencería y Sex Shop</title>
+    <!--Favicon para imagen de marca en la pestaña-->
+    <link rel="shortcut icon" href="./image/todopadel.png" type="image/x-icon">
+    <title>👙 Lenceria y Sexshop 💋 | Tienda</title>
 </head>
 
 <body>
@@ -32,10 +41,18 @@
     <!--Modal-->
     <div id="modal-container" class="modal-container"></div>
     <!--Script de JS propio -->
+    <!--Productos que luego voy a importar mediante ID-->
     <script src="./js/productos.js"></script>
+    <!--Funcionalidad especificas del carrito y su DOM (Todo lo que se imprima en pantalla cuando hagas click en el simbolo 🛒)-->
     <script src="./js/carrito.js"></script>
+    <!--Funcionalidades generales de la pagina y su DOM-->
     <script src="./js/app.js"></script>
+    <!--Codigo apartado para agregar proligidad al codigo. Su funcion es incorporar asincronia a la pagina mediante Local Storage-->
     <script src="./js/storage.js"></script>
-
+    <!--Script para importar API-->
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="./js/keys.js"></script>
+    <script async src="https://js.stripe.com/v3/buy-button.js">
+    </script>
 
 </html>

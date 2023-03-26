@@ -1,6 +1,6 @@
 body {
     margin: 0;
-
+    background-color: rgb(100, 4, 4);
 }
 
 /*navbar*/
@@ -15,14 +15,14 @@ body {
 .navbar {
     display: flex;
     justify-content: space-between;
-    height: 12vh;
+    height: 14vh;
     background-color: #1b1b1b;
+    color: #bcbbbb;
 }
 
 .navbar-logo {
     justify-self: start;
     margin-left: 20px;
-    color: #fff;
     margin-top: 4vh;
     cursor: pointer;
 }
@@ -41,7 +41,7 @@ body {
     background-position: center;
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url("https://www.zonadepadel.es/img/tienda-padel-valencia/cabecera-tienda-ordenador.jpg");
+        url("https://attachment.outlook.live.net/owa/MSA%3Atomasgonzalezdesarrolloweb%40hotmail.com/service.svc/s/GetAttachmentThumbnail?id=AQMkADAwATY0MDABLTFjNGItMDAAMWQtMDACLTAwCgBGAAADE03NuKS3XkCBBNAi%2FHashAcAafACAwXQV0G%2Bhmucu8smJQAAAgEMAAAAafACAwXQV0G%2Bhmucu8smJQAAAhUlAAAAARIAEABfJmibgYTtQJMSaWZdTZ4q&thumbnailType=2&isc=1&token=eyJhbGciOiJSUzI1NiIsImtpZCI6IkQ4OThGN0RDMjk2ODQ1MDk1RUUwREZGQ0MzODBBOTM5NjUwNDNFNjQiLCJ0eXAiOiJKV1QiLCJ4NXQiOiIySmozM0Nsb1JRbGU0Tl84dzRDcE9XVUVQbVEifQ.eyJvcmlnaW4iOiJodHRwczovL291dGxvb2subGl2ZS5jb20iLCJ1YyI6ImZmYmZmOTFhNzQ3YTRlYzJiNTIzMzEyOTc2MDYwMWI3IiwidmVyIjoiRXhjaGFuZ2UuQ2FsbGJhY2suVjEiLCJhcHBjdHhzZW5kZXIiOiJPd2FEb3dubG9hZEA4NGRmOWU3Zi1lOWY2LTQwYWYtYjQzNS1hYWFhYWFhYWFhYWEiLCJpc3NyaW5nIjoiV1ciLCJhcHBjdHgiOiJ7XCJtc2V4Y2hwcm90XCI6XCJvd2FcIixcInB1aWRcIjpcIjE3NTkyMTkwNzkxMTg4NzdcIixcInNjb3BlXCI6XCJPd2FEb3dubG9hZFwiLFwib2lkXCI6XCIwMDA2NDAwMC0xYzRiLTAwMWQtMDAwMC0wMDAwMDAwMDAwMDBcIixcInByaW1hcnlzaWRcIjpcIlMtMS0yODI3LTQwOTYwMC00NzQ2NzcyNzdcIn0iLCJuYmYiOjE2Nzk3NzcwODUsImV4cCI6MTY3OTc3NzY4NSwiaXNzIjoiMDAwMDAwMDItMDAwMC0wZmYxLWNlMDAtMDAwMDAwMDAwMDAwQDg0ZGY5ZTdmLWU5ZjYtNDBhZi1iNDM1LWFhYWFhYWFhYWFhYSIsImF1ZCI6IjAwMDAwMDAyLTAwMDAtMGZmMS1jZTAwLTAwMDAwMDAwMDAwMC9hdHRhY2htZW50Lm91dGxvb2subGl2ZS5uZXRAODRkZjllN2YtZTlmNi00MGFmLWI0MzUtYWFhYWFhYWFhYWFhIiwiaGFwcCI6Im93YSJ9.LAYQHQMTMZQNX6r-IbW44Lbfwu_-5agCY6g7HmU1bEHPP1Lntzip_CPW9lwW1-sBuc9cxBJLiwRg9LWT-DWY7Gqe5tock022bMNSKkmS-do9R7kfiq3cNHo7igtbHi8HFmm7oohOhMX_dy62Jo47K4x41MBb0CbKCClOBSo_z5DZbtCBXWZkt23pI_U9dASBKq7Bjx8xbOfF7kD1Upqo9X9P42qVMCbukHkLV5qtAcknmEccMMCfHUJLRlegkYGB0DlM97TKmKTHx64f8vzfvhXIxOr-2Y1RfFomxUCwzI-WWxB7zSlmp5IU81ONRccI7h4MJbaHtLZDswkp6Ko9xw&X-OWA-CANARY=pDtoNHraP0q2598PAPTBbXA-TNNxLdsYwRahwqSkv01sNLPDPkOjMjrXXypskrRo7Q05ZJPzUhY.&owa=outlook.live.com&scriptVer=20230317009.11&animation=true");
 }
 
 .banner-container {
@@ -82,7 +82,8 @@ body {
     padding: 20px;
     text-align: center;
     font-family: arial;
-
+    background-color: rgb(79, 3, 3);
+    color: #fff;
 }
 
 .card>img {
@@ -91,7 +92,7 @@ body {
 }
 
 .precio {
-    color: grey;
+    color: #fff;
     font-size: 22px;
 }
 
@@ -131,14 +132,15 @@ body {
 }
 
 .modal-container::-webkit-scrollbar {
-    display: none;
+    display: block;
+    border: #bcbbbb 1px solid;
 }
 
 .modal-header {
     display: flex;
     justify-content: space-around;
     background-color: #0a0909;
-    color: #fff;
+    color: #bcbbbb;
     width: 100%;
 }
 
@@ -166,15 +168,27 @@ body {
 }
 
 .total-content {
+    width: 66%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     font-size: 25px;
     padding: 20px;
-    text-align: center;
+    align-items: center;
     padding-top: 20px;
 }
 
-/*Eliminar productos*/
+/*Eliminar | Sumar | Restar productos*/
 
 .eliminar-producto {
+    cursor: pointer;
+}
+
+.sumar {
+    cursor: pointer;
+}
+
+.restar {
     cursor: pointer;
 }
 
@@ -190,4 +204,14 @@ body {
     right: 14px;
     position: absolute;
     display: none;
+}
+
+/*Footer*/
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #1b1b1b;
+    color: #bcbbbb;
 }
